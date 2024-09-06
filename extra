@@ -1,0 +1,27 @@
+<p><b>Data início de leitura: </b><input type="date"></p>
+        <p><b>Data fim de leitura: </b><input type="date"></p>
+        <p><b>Classificação: </b></p>
+        <ul class="avaliacao">
+            <li class="estrela ativa" data-avaliacao="1"></li>
+            <li class="estrela" data-avaliacao="2"></li>
+            <li class="estrela" data-avaliacao="3"></li>
+            <li class="estrela" data-avaliacao="4"></li>
+            <li class="estrela" data-avaliacao="5"></li>
+        </ul>
+        <p><b>Comentários: </b></p>
+        <textarea></textarea>
+
+
+
+        .avaliacao{display: flex;}
+.estrela{
+    list-style-type: none;
+    border: 1px #fff;
+    color: gold;
+}
+.estrela::after{
+    content: "\2605";
+}
+.estrela-ativa~estrela{
+    content: "\2606";
+}
